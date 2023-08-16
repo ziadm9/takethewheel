@@ -27,8 +27,7 @@ wheel.onclick=async (event)=>{
                     chanceList.push(cat)
                 }
             }
-            console.log(chanceList)
-            console.log(chanceList[Math.floor(Math.random()*total)])
+        
         }
         else{
             total=0
