@@ -27,7 +27,7 @@ wheel.onclick=async (event)=>{
                     chanceList.push(cat)
                 }
             }
-        
+            thing = chanceList[Math.floor(Math.random()*total)]
         }
         else{
             total=0
