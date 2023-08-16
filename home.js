@@ -22,8 +22,8 @@ wheel.onclick=async (event)=>{
             total=0
             chanceList=[]
             for(cat in negObject){
-                total+=Number(negObject[cat])
-                for(i=0;i<negObject[cat];i++){
+                total+=(11-Number(negObject[cat]))
+                for(i=0;i<(11-negObject[cat]);i++){
                     chanceList.push(cat)
                 }
             }
@@ -34,8 +34,8 @@ wheel.onclick=async (event)=>{
             total=0
             chanceList=[]
             for(cat in posObject){
-                total+=Number(posObject[cat])
-                for(i=0;i<posObject[cat];i++){
+                total+=(11-Number(posObject[cat]))
+                for(i=0;i<(11-posObject[cat]);i++){
                     chanceList.push(cat)
                 }
             }
