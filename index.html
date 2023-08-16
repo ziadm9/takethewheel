@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/transparentlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="firebase.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>Take The Wheel</title>
+</head>
+<body onload="checkIndex()">
+    <header>
+        <img id="logo" src="images/transparentlogo.png">
+        <p id="homeHeader">Take The Wheel</p>
+        <div id="authButtons">
+            <a href="register.html" class="authButton" id="signUp">Sign Up</a>
+            <a href="login.html" class="authButton" id="logIn">Log In</a>
+        </div>
+    </header>
+
+    <section id="main">
+        <p id="homeMidHeader">What is <span id="homeStyle">Take the Wheel?</span></p>
+        <br>
+        <p id="homeMid1">Time management is a crucial part of life for people of all ages. Being productive with your time can make you feel more accomplished and help you reach your goals. This project uses personalized settings to help people find productive things to do with their time, and limit "wasted" or unproductive time.</p>
+        <br>
+        <p id="homeMid2">After creating an account, you will be able to set your goals through a short survey. You can then spin a wheel on the homepage any time you need to find something to do! Click the Sign Up button to get started!</p>
+    </section>
+
+    <footer>
+        <p>Made by Ziad Mohammed</p>
+        <a href="https://ziadm9.github.io/website/"target="_blank">About Me</a>
+    </footer>
+</body>
+</html>

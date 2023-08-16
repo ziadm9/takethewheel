@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/transparentlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="firebase.js" defer></script>
+    <script src="profile.js" defer></script>
+    <title>Profile | Take The Wheel</title>
+</head>
+<body onload="check()">
+    <div id="profileMain">
+        <div id="profileBox">
+            <div id="profileHead">
+                <p id="backarrow">←</p>
+                <p id="profileHeader">Profile</p>
+                <div id="logout">Log out</div>
+            </div>
+            <div id="preferencesBox">
+                <p id="preferencesHeader">Wheel Preferences</p>
+                <div id="surveyBox">
+                    <div id="categories">
+                        <div class="category" id="Career">
+                            <div class="categoryHead">
+                                <div class="headLeft">
+                                    <p class="categoryHeader">Career</p>
+                                    <p class="categoryNumber">: 5</p>
+                                </div>
+                                <p class="closeButton">-</p>
+                            </div>
+                            <input class="categorySlider" type="range" min="1" max="10" value="5">
+                        </div>
+                    </div>
+                    <div id="newCategory">
+                        <input id="newCategoryInput" type="text" placeholder="Add another category" maxLength="40">
+                        <p id="addButton">+</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="surveyBox2">
+                    <div id="categories2">
+                        <div class="category2" id="Watching TV">
+                            <div class="categoryHead">
+                                <div class="headLeft">
+                                    <p class="categoryHeader">Watching TV</p>
+                                    <p class="categoryNumber">: 5</p>
+                                </div>
+                                <p class="closeButton">-</p>
+                            </div>
+                            <input class="categorySlider" type="range" min="1" max="10" value="5">
+                        </div>
+                    </div>
+                    <div id="newCategory2">
+                        <input id="newCategoryInput2" type="text" placeholder="Add another category" maxLength="40">
+                        <p id="addButton2">+</p>
+                    </div>
+                </div>
+                <p id="saveChanges">Save Changes</p>
+                
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/transparentlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="firebase.js" defer></script>
+    <script src="survey.js" defer></script>
+    <title>Get Started | Take The Wheel</title>
+</head>
+<body onload="checkSurvey()">
+    <div id="surveyHeader">
+        <p id="welcomeHead">Welcome!</p>
+        <div id="surveyHead">
+            <p id="getStart1">Get Started</p>
+            <p id="getStart2">Rate each of these areas based on how good you feel about them in your life. A lower rating means you want to improve more on that area. Feel free to add your own categories!</p>
+            <p id="getStart3">You can always change these later</p>
+        </div>
+    </div>
+
+    <section id="surveyMain">
+        <div id="surveyBox">
+            <div id="categories">
+                <div class="category" id="Career">
+                    <div class="categoryHead">
+                        <div class="headLeft">
+                            <p class="categoryHeader">Career</p>
+                            <p class="categoryNumber">: 5</p>
+                        </div>
+                        <p class="closeButton">-</p>
+                    </div>
+                    <input class="categorySlider" type="range" min="1" max="10" value="5">
+                </div>
+                <div class="category" id="Education">
+                    <div class="categoryHead">
+                        <div class="headLeft">
+                            <p class="categoryHeader">Education</p>
+                            <p class="categoryNumber">: 5</p>
+                        </div>
+                        <p class="closeButton">-</p>
+                    </div>
+                    <input class="categorySlider" type="range" min="1" max="10" value="5">
+                </div>
+            </div>
+            <div id="newCategory">
+                <input id="newCategoryInput" type="text" placeholder="Add another category" maxLength="40">
+                <p id="addButton">+</p>
+            </div>
+        </div>
+        <p id="surveyNext">Next →</p>
+
+        <div id="surveyBox2">
+            <div id="categories2">
+                <div class="category2" id="Watching TV">
+                    <div class="categoryHead">
+                        <div class="headLeft">
+                            <p class="categoryHeader">Watching TV</p>
+                            <p class="categoryNumber">: 5</p>
+                        </div>
+                        <p class="closeButton">-</p>
+                    </div>
+                    <input class="categorySlider" type="range" min="1" max="10" value="5">
+                </div>
+            </div>
+            <div id="newCategory">
+                <input id="newCategoryInput2" type="text" placeholder="Add another category" maxLength="40">
+                <p id="addButton2">+</p>
+            </div>
+        </div>
+        <p id="surveyNext2">Done →</p>
+
+        <div id="welcomeBox">
+            <p class="welcomeDesc">On the homepage, you can spin a wheel that uses your survey choices to decide how to spend your time.</p>
+            <p class="welcomeDesc">You can change your survey choices at any time in your <span id="profStyle">profile</span></p>
+            <p class="welcomeLast">Ready to <span id="welcomeStyle">Take The Wheel</span> of your life?</p>
+            <p id="homeButton">Home →</p>
+        </div>
+    </section>
+
+</body>
+</html>

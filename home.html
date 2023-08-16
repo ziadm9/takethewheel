@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/transparentlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="firebase.js" defer></script>
+    <script src="home.js" defer></script>
+    <title>Home | Take The Wheel</title>
+</head>
+<body onload="checkHome()">
+    <header>
+        <img id="logo" src="images/transparentlogo.png">
+        <p id="homeHeader">Take The Wheel</p>
+        <a href="profile.html"><img id="profPic" src="images/profile.png"></a>
+    </header>
+
+    <section id="main">
+        <p id="wheelAbove">Can't decide what to do? Spin the wheel!</p>
+        <img id="wheel" src="images/theWheelG2.png">
+        <p id="wheelBelow">Click the wheel to spin!</p>
+    </section>
+
+    <footer>
+        <p>Made by Ziad Mohammed</p>
+        <a href="https://ziadm9.github.io/website/" target="_blank">About Me</a>
+    </footer>
+</body>
+</html>

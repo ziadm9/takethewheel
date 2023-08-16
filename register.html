@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/transparentlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="firebase.js" defer></script>
+    <script src="register.js" defer></script>
+    <title>Register | The Wheel</title>
+</head>
+<body onload="checkIndex()">
+    <div id="registerMain">
+        <div id="registerBox">
+            <p id="registerHeader">Register</p>
+            <p id="emailLabel">Email</p>
+            <input id="emailField" type="email" placeholder="Enter email">
+            <p id="passwordLabel">Password</p>
+            <input id="passwordField" type="password" placeholder="Enter password">
+            <div id="alrs">
+                <p id="alr">Already have an account?</p>
+                <a id="alrLink" href="login.html">Log in here</a>
+            </div>
+            <div id="registerSubmit">Sign Up</div>
+            <div id="altLogins">
+                <p id="altHeader">Sign in with Google</p>
+                <img id="googleLogin" src="https://codehs.com/uploads/5c566dfffd7b82d08e0b2a733318be18">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
