@@ -3,46 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="icon" type="image/x-icon" href="/images/transparentlogo.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.webmanifest">
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
     <script src="firebase.js" defer></script>
     <script src="profile.js" defer></script>
-    <title>Profile</title>
+    <title>Profile | Take The Wheel</title>
 </head>
 <body onload="check()">
-    <div id="loginHeader">
-        <span class="hidden">></span>
-        <h3>Profile</h3>
-        <span class="hidden">></span>
-    </div>
-    <div id="profileWrapper">
-        <div id="profileHeader">
-            <p>Your Information</p>
-            <p id="editProfile">Edit</p>
+    <div id="profileMain">
+        <div id="profileBox">
+            <div id="profileHead">
+                <p id="backarrow">←</p>
+                <p id="profileHeader">Profile</p>
+                <div id="logout">Log out</div>
+            </div>
+            <div id="preferencesBox">
+                <p id="preferencesHeader">Wheel Preferences</p>
+                <div id="surveyBox">
+                    <div id="categories">
+                        <div class="category" id="Career">
+                            <div class="categoryHead">
+                                <div class="headLeft">
+                                    <p class="categoryHeader">Career</p>
+                                    <p class="categoryNumber">: 5</p>
+                                </div>
+                                <p class="closeButton">-</p>
+                            </div>
+                            <input class="categorySlider" type="range" min="1" max="10" value="5">
+                        </div>
+                    </div>
+                    <div id="newCategory">
+                        <input id="newCategoryInput" type="text" placeholder="Add another category" maxLength="40">
+                        <p id="addButton">+</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="surveyBox2">
+                    <div id="categories2">
+                        <div class="category2" id="Watching TV">
+                            <div class="categoryHead">
+                                <div class="headLeft">
+                                    <p class="categoryHeader">Watching TV</p>
+                                    <p class="categoryNumber">: 5</p>
+                                </div>
+                                <p class="closeButton">-</p>
+                            </div>
+                            <input class="categorySlider" type="range" min="1" max="10" value="5">
+                        </div>
+                    </div>
+                    <div id="newCategory2">
+                        <input id="newCategoryInput2" type="text" placeholder="Add another category" maxLength="40">
+                        <p id="addButton2">+</p>
+                    </div>
+                </div>
+                <p id="saveChanges">Save Changes</p>
+
+            </div>
+
         </div>
-        <p class="profileLabel">Email</p>
-        <p class="infoLabel" id="emailLabel">s</p>
-        <p class="profileLabel">Home Address</p>
-        <input class="setupInput" disabled="true" id="addressInput" type="text" maxlength="50" placeholder="Enter your home address">
-        <p class="profileLabel">City</p>
-        <input class="setupInput" disabled="true" id="cityInput" type="text" maxlength="50" placeholder="Enter your city">
-        <p class="profileLabel">Zip Code (Optional)</p>
-        <input class="setupInput" disabled="true" id="zipInput" type="text" maxlength="5" placeholder="Enter your zip code">
-        <p class="profileLabel">Birth Date</p>
-        <input class="setupInput" disabled="true" id="birthInput" type="date">
-        <p id="logout1">Log Out</p>
     </div>
-    <div id="guestWrapper">
-        <h2>Logged in as guest</h2>
-        <h4><a>Create an account</a> to save your voting information!</h4>
-        <p id="logout2">Log Out</p>
-    </div>
-    <div id="loginFooter"></div>    
 </body>
 </html>
-
-
